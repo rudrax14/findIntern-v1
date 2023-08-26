@@ -1,0 +1,206 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: none;
+}
+
+button a {
+text-decoration: none;
+color: #eee;
+}
+::-webkit-scrollbar{
+    display: none;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #eee;
+    /* background-color: #f3f2ef; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.header__left img{
+    object-fit: contain;
+    height: 40px;
+    margin-right: px;
+}
+.header {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: blueviolet;
+  }
+
+.header__left{
+    margin-left: 1%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.headersearch{
+    display: inline-block;
+    font-size: 15px;
+    padding: 5px;
+    width: 40%;
+    height: 30px;
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.20);
+}
+
+.header__right{
+    margin-left: 1%;
+}
+
+.header a{
+    text-decoration: none;
+    color: #eee;
+  }
+
+.headerOption{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.headerOption:hover{
+    color:black;
+}
+
+.headerOption h3{
+    font-size: 12px;
+    margin-top: 2px;
+    font-weight: 400;
+}
+
+.headerOption_icon{
+    margin-right: 5px;
+    height: 20px;
+}
+
+
+.job_description{
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: blueviolet;
+    height: 900px;
+    width: 1000px;
+    /* background-color: blueviolet; */
+    /* background-color: #eee; */
+    
+}
+.job_description img{
+    height: 100px;
+    margin-left: 450px;
+}
+.job_description h1{
+    position: absolute;
+    top: 150px;
+    font-size: 25px;
+    color: #222;
+}
+.job_description .title{
+    position: absolute;
+    top: 180px;
+    color: #666;
+    font-size: 16px;
+    font-family: Segoe UI;
+}
+.job_description .tag{
+    position: absolute;
+    top: 205px;
+    color: #666;
+    font-size: 15px;
+    font-family: Segoe UI;
+}
+.job_description button{
+    position: absolute;
+    top: 240px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    background:blueviolet;
+    font-size: 15px;
+    font-family: Segoe UI;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+.job_description .description{
+    position: absolute;
+    top: 300px;
+    color: #666;
+    font-size: 17px;
+    font-family: Segoe UI;
+    text-align: center;
+    font-weight: bold;
+}
+.job_description .p
+{
+    margin-left: -460px;
+    margin-right: 100px;
+    margin-top: 270px;
+    font-size: 16px;
+    font-family: Segoe UI;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    color: #666;
+}
+.job_about{
+    margin-top: 500px;
+    padding-top: 50px;
+    text-align: left;
+    margin-right: 100px;
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    height: 900px;
+    width: 1000px;
+    
+}
+.job_about .about{
+    line-height: 3;
+    margin-left: -460px;
+    margin-right: 100px;
+    font-size: 15px;
+    font-family: Segoe UI;
+    color: #666;
+    font-weight: bold;
+}
+.job_about .abt{
+    margin-top: -45px;
+    line-height: 3;
+    margin-left: -330px;
+    font-size: 14px;
+    font-family: Segoe UI;
+    color: #666;
+}

@@ -1,0 +1,488 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheets/home.css" />
+  <script src="https://kit.fontawesome.com/b02b01c4f6.js" crossorigin="anonymous"></script>
+  <title>FINDINTERN</title>
+  <link rel="shortcut icon" href="/stylesheets/Assets/toplogo.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Header Starts -->
+  <div class="header">
+    <div class="header__left">
+      <img src="/stylesheets/Assets/demo-logo.png" alt="logo">
+      <!-- <div class="header__search">
+          <i class="material-icons"> search </i>
+          <input type="text" placeholder="SEARCH"/>
+        </div> -->
+    </div>
+
+    <div class="header__right">
+      <div class="headerOption">
+        <a href="/home">
+          <i class="material-icons headerOption__icon">home</i>
+        </a>
+        <h3><a href="/home">Home</a></h3>
+      </div>
+      <div class="headerOption">
+        <a href="/industry">
+
+          <i class="material-icons headerOption__icon"> construction </i>
+        </a>
+        <h3><a href="/industry">Industry</a></h3>
+      </div>
+      <div class="headerOption">
+        <a href="/jobs">
+
+          <i class="material-icons headerOption__icon"> business_center </i>
+        </a>
+        <h3><a class="goshijin-sama" href="/jobs">Jobs</a></h3>
+      </div>
+      <div class="headerOption">
+        <a href="/home">
+
+          <i class="material-icons headerOption__icon"> how_to_reg </i>
+        </a>
+        <h3><a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSefXXKdDMnQhFm5nE1TGgB7bgjGflqHz6MVeAdWAibFBaCL4A/viewform"
+            class="goshijin-sama">Register</a></h3>
+      </div>
+      <div class="headerOption">
+        <a href="/location">
+
+          <i class="material-icons headerOption__icon"> place </i>
+        </a>
+        <h3><a href="/location">Location</a></h3>
+      </div>
+      <div class="headerOption">
+        <a href="/me">
+
+          <i class="material-icons headerOption__icon"> account_circle </i>
+        </a>
+        <h3><a href="/me">Me</a></h3>
+      </div>
+      <div class="headerOption">
+        <a href="/logout">
+
+          <i class="material-icons headerOption__icon"> logout </i>
+        </a>
+        <h3><a href="/logout">Logout</a></h3>
+      </div>
+
+    </div>
+  </div>
+  <!-- Header Ends -->
+
+  <!-- Main Body Starts -->
+  <div class="body__main">
+    <!-- Sidebar Starts -->
+    <div class="sidebar">
+      <div class="sidebar__top">
+        <img
+          src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080"
+          alt="" />
+        <i class="material-icons sidebar__topAvatar"> account_circle </i>
+        <h2>
+          <%=user.username%>
+        </h2>
+        <h4>
+          <%=user.emailid%>
+        </h4>
+      </div>
+
+      <div class="sidebar__stats">
+        <div class="sidebar__stat">
+          <p>Who Viewed You</p>
+          <p class="sidebar__statNumber">2,453</p>
+        </div>
+        <div class="sidebar__stat">
+          <p>Views on post</p>
+          <p class="sidebar__statNumber">2,650</p>
+        </div>
+      </div>
+
+      <div class="sidebar__bottom">
+        <p>Recent</p>
+        <div class="sidebar__recentItem">
+          <span class="sidebar__hash">#</span>
+          <a href="/jobs/wipro" class="left-text">programming</a>
+        </div>
+        <div class="sidebar__recentItem">
+          <span class="sidebar__hash">#</span>
+          <a href="/jobs/citi" class="left-text">marketing</a>
+        </div>
+        <div class="sidebar__recentItem">
+          <span class="sidebar__hash">#</span>
+          <a href="/jobs/instagram" class="left-text">designer</a>
+        </div>
+        <div class="sidebar__recentItem">
+          <span class="sidebar__hash">#</span>
+          <a href="/jobs/kotak" class="left-text">business</a>
+        </div>
+        <div class="sidebar__recentItem">
+          <span class="sidebar__hash">#</span>
+          <a href="/jobs/mi" class="left-text">digital</a>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar Ends -->
+
+    <!-- Feed Starts -->
+    <div class="feed">
+      <div class="feed__inputContainer">
+        <div class="feed__input">
+          <i class="material-icons"> create </i>
+          <form>
+            <input type="text" placeholder="Start a post" />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+
+        <div class="feed__inputOptions">
+          <div class="inputOption">
+            <i style="color: #70b5f9" class="material-icons"> insert_photo </i>
+            <h4>Photo</h4>
+          </div>
+          <div class="inputOption">
+            <i style="color: #e7a33e" class="material-icons"> subscriptions </i>
+            <h4>Video</h4>
+          </div>
+          <div class="inputOption">
+            <i style="color: #c0cbcd" class="material-icons"> event_note </i>
+            <h4>Event</h4>
+          </div>
+          <div class="inputOption">
+            <i style="color: #7fc15e" class="material-icons"> calendar_view_day </i>
+            <h4>Write Article</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post Starts -->
+      <div class="post">
+        <div class="post__header">
+          <i class="material-icons sidebar__topAvatar"> account_circle </i>
+          <div class="post__info">
+            <h2>Rudra Mondal</h2>
+            <p>Job Description</p>
+          </div>
+        </div>
+
+        <div class="post__body">
+          <p>Sales people can't be order-takers, they need to be Challengers.</p>
+          <p> But we also don't know everything.</p>
+          <p> So what do you do when someone wants to buy something from you , and they believe it's the right decision
+            - but you disagree?</p>
+          <p> Do you Let Them Buy it?</p>
+          <p> #sales </p>
+        </div>
+
+        <div class="feed__inputOptions">
+          <div class="inputOption">
+            <i style="color: gray" class="material-icons"> thumb_up </i>
+            <h4>Like</h4>
+          </div>
+          <div class="inputOption">
+            <i style="color: gray" class="material-icons"> comment </i>
+            <h4>Comment</h4>
+          </div>
+          <div class="inputOption">
+            <i style="color: gray" class="material-icons"> share </i>
+            <h4>Share</h4>
+          </div>
+          <div class="inputOption">
+            <i style="color: gray" class="material-icons"> send </i>
+            <h4>Send</h4>
+          </div>
+        </div>
+      </div>
+      <!-- Post Ends -->
+
+      <!-- Post Starts -->
+      <div class="post">
+        <div class="post__header">
+          <i class="material-icons sidebar__topAvatar"> account_circle </i>
+          <div class="post__info">
+            <h2>Devashish Mondal</h2>
+            <p>Job Description</p>
+          </div>
+        </div>
+
+        <div class="post__body">
+          <p>Interested in a job in IT?
+          <p> Get the skills you need to pursue an entry-level position as an IT help desk technician. </p>
+          <p> This course is an ideal starting point for job seekers wishing to venture into the field
+            of technical support or seeking to strengthen their overall technical savvy and skills. </p>
+          <p> It covers the fundamental IT help desk responsibilities, including software installation,
+            networking, and troubleshooting. Learn about removing software from a computer, networking
+            through the command line, joining computers to a domain, and more. </p>
+          <p> Instructors Jason Ruediger and Mariecor Agravante also teach important soft skills, including customer
+            service skills
+            relevant to the help desk professional.</p>
+          <p> #it </p>
+        </div>
+
+        <div class="feed__inputOptions">
+          <div class="inputOption">
+            <i style="color: gray" class="material-icons"> thumb_up </i>
+            <h4>Like</h4>
+          </div>
+          <div class="inputOption">
+            <i style="color: gray" class="material-icons"> comment </i>
+            <h4>Comment</h4>
+          </div>
+          <div class="inputOption">
+            <i style="color: gray" class="material-icons"> share </i>
+            <h4>Share</h4>
+          </div>
+          <div class="inputOption">
+            <i style="color: gray" class="material-icons"> send </i>
+            <h4>Send</h4>
+          </div>
+        </div>
+      </div>
+      <!-- Post Ends -->
+
+      <!-- Post Starts -->
+      <div class="post">
+        <div class="post__header">
+          <i class="material-icons sidebar__topAvatar"> account_circle </i>
+          <div class="post__info">
+            <h2>Aniket agravat</h2>
+            <p>Job Description</p>
+          </div>
+        </div>
+
+        <div class="post__body">
+          <div class="text">
+            <p>In LEADERSHIP skills, you will partner with marketing leads on bringing the creative
+              vision to life by focusing on how these ideas will be produced and implemented. </p>
+            <p>You will create innovative connections between our content and consumers and manage
+              the end-to-end production process of non-traditional marketing tactics. </p>
+            <p>This means that you thrive in an environment that requires you to bridge strategic,
+              creative and technical needs. </p>
+            <p>You are a senior creative producer with a proven track record of bringing marketing campaigns to life
+              across a variety of media, spaces, and canvases.</p>
+            <p>#leadership</p>
+          </div>
+        </div>
+
+        <div class="feed__inputOptions">
+          <div class="inputOption">
+            <i style="color: gray" class="material-icons"> thumb_up </i>
+            <h4>Like</h4>
+          </div>
+          <div class="inputOption">
+            <i style="color: gray" class="material-icons"> comment </i>
+            <h4>Comment</h4>
+          </div>
+          <div class="inputOption">
+            <i style="color: gray" class="material-icons"> share </i>
+            <h4>Share</h4>
+          </div>
+          <div class="inputOption">
+            <i style="color: gray" class="material-icons"> send </i>
+            <h4>Send</h4>
+          </div>
+        </div>
+      </div>
+      <!-- Post Ends -->
+
+      <!-- Post Starts -->
+      <!-- <div class="post">
+          <div class="post__header">
+            <i class="material-icons sidebar__topAvatar"> account_circle </i>
+            <div class="post__info">
+              <h2>Rudra Mondal</h2>
+              <p>Job Description</p>
+            </div>
+          </div>
+
+          <div class="post__body">
+            <p>Message here</p>
+          </div>
+
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> thumb_up </i>
+              <h4>Like</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> comment </i>
+              <h4>Comment</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> share </i>
+              <h4>Share</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> send </i>
+              <h4>Send</h4>
+            </div>
+          </div>
+        </div> -->
+      <!-- Post Ends -->
+
+      <!-- Post Starts -->
+      <!-- <div class="post">
+          <div class="post__header">
+            <i class="material-icons sidebar__topAvatar"> account_circle </i>
+            <div class="post__info">
+              <h2>Devashish Mondal</h2>
+              <p>Job Description</p>
+            </div>
+          </div>
+
+          <div class="post__body">
+            <p>Message here</p>
+          </div>
+
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> thumb_up </i>
+              <h4>Like</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> comment </i>
+              <h4>Comment</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> share </i>
+              <h4>Share</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> send </i>
+              <h4>Send</h4>
+            </div>
+          </div>
+        </div> -->
+      <!-- Post Ends -->
+
+      <!-- Post Starts -->
+      <!-- <div class="post">
+          <div class="post__header">
+            <i class="material-icons sidebar__topAvatar"> account_circle </i>
+            <div class="post__info">
+              <h2>Aniket agravat</h2>
+              <p>Job Description</p>
+            </div>
+          </div>
+
+          <div class="post__body">
+            <p>Message here</p>
+          </div>
+
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> thumb_up </i>
+              <h4>Like</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> comment </i>
+              <h4>Comment</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> share </i>
+              <h4>Share</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> send </i>
+              <h4>Send</h4>
+            </div>
+          </div>
+        </div> -->
+      <!-- Post Ends -->
+
+      <!-- Post Starts -->
+      <!-- <div class="post">
+          <div class="post__header">
+            <i class="material-icons sidebar__topAvatar"> account_circle </i>
+            <div class="post__info">
+              <h2>Rudra Mondal</h2>
+              <p>Job Description</p>
+            </div>
+          </div>
+
+          <div class="post__body">
+            <p>Message here</p>
+          </div>
+
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> thumb_up </i>
+              <h4>Like</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> comment </i>
+              <h4>Comment</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> share </i>
+              <h4>Share</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> send </i>
+              <h4>Send</h4>
+            </div>
+          </div>
+        </div> -->
+      <!-- Post Ends -->
+    </div>
+    <!-- Feed Ends -->
+
+    <!-- Widgets Starts -->
+    <div class="widgets">
+      <div class="widgets__header">
+        <h2>Top companies</h2>
+        <i class="material-icons"> info </i>
+      </div>
+      <div class="widgets__article">
+        <div class="widgets__articleLeft">
+          <i class="material-icons"> fiber_manual_record </i>
+        </div>
+        <div class="widgets__articleRight">
+          <a href="/jobs/wipro" class="right-text">
+            <h4>Wipro</h4>
+          </a>
+          <p>4500 peoples</p>
+        </div>
+      </div>
+
+      <div class="widgets__article">
+        <div class="widgets__articleLeft">
+          <i class="material-icons"> fiber_manual_record </i>
+        </div>
+        <div class="widgets__articleRight">
+          <a href="/jobs/amazon" class="right-text">
+            <h4>Amazon India</h4>
+          </a>
+          <p>3500 peoples</p>
+        </div>
+      </div>
+
+      <div class="widgets__article">
+        <div class="widgets__articleLeft">
+          <i class="material-icons"> fiber_manual_record </i>
+        </div>
+        <div class="widgets__articleRight">
+          <a href="/jobs/instagram" class="right-text">
+            <h4>Instagram</h4>
+          </a>
+          <p>2500 peoples</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Widgets Ends -->
+  </div>
+  <!-- Main Body Ends -->
+</body>
+
+</html>

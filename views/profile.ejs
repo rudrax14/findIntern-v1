@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <title>USER | PROFILE</title>
+    <link rel="shortcut icon" href="/stylesheets/Assets/toplogo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="header__left">
+          <a href="/home"><img src="/stylesheets/Assets/demo-logo.png" alt="logo"></a>
+        </div>
+        <div class="header__right">
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon"> home </i>
+              <h3><a href="/home">Home</a></h3>
+            </div>
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon"> construction </i>
+              <h3><a href="/industry">Industry</a></h3>
+            </div>
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon"> business_center </i>
+              <h3><a class="goshijin-sama" href="/jobs">Jobs</a></h3>
+            </div>
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon"> how_to_reg </i>
+              <h3><a href="https://docs.google.com/forms/d/e/1FAIpQLSefXXKdDMnQhFm5nE1TGgB7bgjGflqHz6MVeAdWAibFBaCL4A/viewform" class="goshijin-sama">Register</a></h3>
+            </div>
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon"> place </i>
+              <h3><a href="/location">Location</a></h3>
+            </div>
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon"> account_circle </i>
+              <h3><a href="/me"> Me </a></h3>
+            </div>
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon">  logout </a> </i>
+              <h3><a href="/logout">Logout</a></h3>
+            </div>
+          </div>
+    </div>
+    <!-- Main Body Starts -->
+    <div class="body__main">
+        <!-- Sidebar Starts -->
+        <div class="sidebar">
+          <div class="sidebar__top">
+            <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080" alt="" />
+            <i class="material-icons sidebar__topAvatar"> account_circle </i>
+            <h2><%=user.username%></h2>
+            <h4><%=user.emailid%></h4>
+          </div>
+          <div class="sidebar__stats">
+            <div class="sidebar__stat">
+              <p>Location - Mumbai, Maharashtra, India</p>
+              <!-- <p>Mumbai, Maharashtra, India</p> -->
+              <!-- <p class="sidebar__statNumber">2,453</p> -->
+            </div>
+            <div class="sidebar__stat">
+              <p1>Bio - Full Stack Developer</p1>
+              <!-- <p class="sidebar__statNumber">2,650</p> -->
+            </div>
+          </div>
+<!-- 2 coloum -->  
+          <!-- <div class="sidebar__bottom">
+            <h3 class="listings__heading">
+              Based on your profile
+          </h3>
+          
+           </div> -->
+
+           
+ <!-- 3 coloum -->     
+            <div class="sidebar__bottom">
+            <h3 class="listings__heading">
+              Profile Strength: Beginner
+          </h3>
+          <h4>
+            Activity:
+          </h4>
+          <%company.forEach((c)=>{ %>
+            <p class="companyname"><%=c.companyname%></p>
+         <% }) %>
+           </div>
+
+        </div>
+    </div>
+</body>
+</html>

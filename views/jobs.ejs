@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/jobs.css">
+    <title>JOB | FINDINTERN</title>
+    <link rel="shortcut icon" href="/stylesheets/Assets/toplogo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="header__left">
+            <a href="/home"><img src="/stylesheets/Assets/demo-logo.png" alt="logo"></a>
+          <!-- <input class="headersearch" type="text" placeholder="#"> 
+          <input class="headersearch" type="text" placeholder="#"> -->
+        </div>
+        <div class="header__right">
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon"> home </i>
+              <!-- <h3>Home</h3> -->
+              <h3><a href="/home">Home</a></h3>
+            </div>
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon"> construction </i>
+              <h3><a href="/industry">Industry</a></h3>
+            </div>
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon"> business_center </i>
+              <h3><a class="goshijin-sama" href="/jobs">Jobs</a></h3>
+            </div>
+            <div class="headerOption">
+                <i class="material-icons headerOption__icon"> how_to_reg </i>
+                <h3><a href="https://docs.google.com/forms/d/e/1FAIpQLSefXXKdDMnQhFm5nE1TGgB7bgjGflqHz6MVeAdWAibFBaCL4A/viewform" class="goshijin-sama">Register</a></h3>
+            </div>
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon"> place </i>
+              <h3><a href="/location">Location</a></h3>
+            </div>
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon"> account_circle </i>
+              <h3><a href="/me"> Me </a></h3>
+            </div>
+            <div class="headerOption">
+              <i class="material-icons headerOption__icon"> logout </i>
+              <h3><a href="/logout">Logout</a></h3>
+            </div>
+          </div>
+    </div>
+    
+    
+    <!-- <section class="action-menu">
+        <i class="material-icons"> search </i>
+        <a href="">My Jobs</a>
+        <i class="material-icons"> search </i>
+        <a href="">Job Alerts</a>
+        <a href="">Salary</a>
+        <a href="">Skill Assessment</a>
+        <a href="">More</a>
+    </section> -->
+   
+    <section class="search">
+        <h2
+            class="search__heading">Search for your next job
+        </h2>
+        <form action="" class="search__form">
+            <!-- <i class="material-icons"> search </i> -->
+            <input class="search__input" id="myInput"  name="company" type="text" placeholder="Search by title skill, or company">
+            <input class="search__input" id="myLocation"  name="location" type="text" placeholder="City , State ,or zip code">
+            <button
+                class="search__button">Search
+            </button>
+        </form>
+    </section>
+         
+    <section class="listings">
+        <h3 class="listings__heading">
+            Based on your profile
+        </h3>
+
+        <ul class="listing__grid">
+            <li class="card">
+                <img class="card__logo" src="\stylesheets\Assets\wipro.png" alt="company logo">
+                <p class="card__heading">Software Engineer</p>
+                <p class="companyname card__text">Wipro</p>
+                <p class="locationname card__text">Hyderabad, IN</p>
+                <p class="card__text card__text--small mt">Actively recruiting</p>
+                <p class="card__text card__text--small">1 day ago</p>
+                <button><a href="/jobs/wipro">APPLY</a></button>
+            </li>
+
+            <li class="card">
+              
+                <img class="card__logo"src="\stylesheets\Assets\myntra2.png" alt="company logo">
+                <p class="card__heading">Associate - Omnichannel</p>
+                <p class="companyname card__text">Myntra</p>
+                <p class="locationname card__text">Mumbai, Maharashtra, India</p>
+                <p class="card__text card__text--small mt">Actively recruiting</p>
+                <p class="card__text card__text--small">2 day ago</p>
+                <button><a href="/jobs/myntra">APPLY</a></button>
+        
+            </li>
+
+            <li class="card">
+
+                <img class="card__logo"src="\stylesheets\Assets\mi.png" alt="company logo">
+                <p class="card__heading">Sales Planner</p>
+                <p class="companyname card__text">Xiaomi India</p>
+                <p class="locationname card__text">Delhi, India</p>
+                <p class="card__text card__text--small mt">Actively recruiting</p>
+                <p class="card__text card__text--small">1 day ago</p>
+                <button><a href="/jobs/mi">APPLY</a></button>
+
+            </li>
+
+            <li class="card">
+       
+                <img class="card__logo"src="\stylesheets\Assets\ibm.png" alt="company logo">
+                <p class="card__heading">Employee Transport Operation</p>
+                <p class="companyname card__text">IBM</p>
+                <p class="locationname card__text">Kolkata, India</p>
+                <p class="card__text card__text--small mt">Actively recruiting</p>
+                <p class="card__text card__text--small">1 day ago</p>
+                <button><a href="/jobs/ibm">APPLY</a></button>
+
+            </li>
+
+            <li class="card">
+
+                <img class="card__logo"src="\stylesheets\Assets\amazon.png" alt="company logo">
+                <p class="card__heading">Collection center incharge</p>
+                <p class="companyname card__text">Amazone, In</p>
+                <p class="locationname card__text">Banglore, Maharashtra, India</p>
+                <p class="card__text card__text--small mt">Actively recruiting</p>
+                <p class="card__text card__text--small">1 day ago</p>
+                <button><a href="/jobs/amazon">APPLY</a></button>
+
+            </li>
+
+            <li class="card">
+
+                <img class="card__logo"src="\stylesheets\Assets\insta.png" alt="company logo">
+                <p class="card__heading">Marketing Manager Instagram</p>
+                <p class="companyname card__text">Instagram</p>
+                <p class="locationname card__text">Bangalore, India</p>
+                <p class="card__text card__text--small mt">Actively recruiting</p>
+                <p class="card__text card__text--small">1 day ago</p>
+                <button><a href="/jobs/instagram">APPLY</a></button>
+
+            </li>
+
+            <li class="card">
+    
+                <img class="card__logo"src="\stylesheets\Assets\citi.jpeg" alt="company logo">
+                <p class="card__heading">Assistant manager</p>
+                <p class="companyname card__text">Citi</p>
+                <p class="locationname card__text">Mumbai, Maharashtra, India</p>
+                <p class="card__text card__text--small mt">Actively recruiting</p>
+                <p class="card__text card__text--small">1 day ago</p>
+                <button><a href="/jobs/citi">APPLY</a></button>
+    
+            </li>
+
+            <li class="card">
+       
+                <img class="card__logo"src="\stylesheets\Assets\kotak life.png" alt="company logo">
+                <p class="card__heading">Actuarial Assistant (Group Pricing)</p>
+                <p class="companyname card__text">Kotak Life</p>
+                <p class="locationname card__text">Mumbai, Maharashtra, India</p>
+                <p class="card__text card__text--small mt">Actively recruiting</p>
+                <p class="card__text card__text--small">1 day ago</p>
+                <button><a href="/jobs/kotak">APPLY</a></button>
+     
+            </li>
+            
+        </ul>
+    </section>
+    <script>
+           document.querySelector("#myInput").addEventListener("keyup",()=>{
+            let filter,p,j,txtvalue,exp,li
+    
+    p=document.querySelectorAll(".companyname")
+    li=document.querySelectorAll(".card")
+    for(j=0;j<p.length;j++){
+        
+        txtvalue=p[j].textContent||p[j].innerText
+        exp=new RegExp( document.querySelector("#myInput").value,"i")
+        if(txtvalue.match(exp)){
+            li[j].style.display="block"
+        }
+        else{
+            li[j].style.display="none"
+        }
+    }
+           })
+       
+ 
+
+
+
+document.querySelector("#myLocation").addEventListener("keyup",()=>{
+    let filter,p,j,txtvalue,exp,li
+        input=document.querySelector("#myLocation")
+        p=document.querySelectorAll(".locationname")
+        li=document.querySelectorAll(".card")
+        for(j=0;j<p.length;j++){
+            
+            txtvalue=p[j].textContent||p[j].innerText
+            exp=new RegExp( document.querySelector("#myLocation").value,"i")
+            if(txtvalue.match(exp)){
+                li[j].style.display="block"
+            }
+            else{
+                li[j].style.display="none"
+            }
+        }
+
+})
+   
+
+
+    </script>
+</body>
+</html>
